@@ -2,13 +2,13 @@
   "name": "Conan O'Brien",
   "channels": [
     {
-      "channel_id": "UCi7GJNg51C3jgmYTUwqoUXA",
+      "youtube_channel_id": "UCi7GJNg51C3jgmYTUwqoUXA",
+      "youtube_uploads_id": "",
       "videos": [
         {
-          "source": "",
-          "video_id": "",
-          "title": "",
-          "published_on": ""
+          "youtube_video_id": "",
+          "youtube_title": "",
+          "youtube_published_on": ""
         },
         {
           "video_id": "",
