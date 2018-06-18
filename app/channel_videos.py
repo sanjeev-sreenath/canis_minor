@@ -46,23 +46,36 @@ if __name__ == '__main__':
   ).execute()
   uploads_id = results['items'][0]['contentDetails']['relatedPlaylists']['uploads']
 
-  response = service.playlistItems().list(
+  request = service.playlistItems().list(
     part='snippet',
     maxResults=50,
     playlistId=uploads_id
     #todo add fields and part(done) parameters to reduce quota usage
-  ).execute()
-  next_page_token = response['nextPageToken']
-  for item in response['items']:
-    print(item['snippet']['title'])
+  )
 
-  while(next_page_token != None or next_page_token!= ''):
-    response = service.playlistItems().list(
-      part='snippet',
-      maxResults=50,
-      pageToken=next_page_token,
-      playlistId=uploads_id
-    ).execute()
-    next_page_token = response['nextPageToken']
-    for item in response['items']:
-      print(item['snippet']['title'])
+  while request is not None:
+    video_list = request.execute()
+    for video in video_list['items']:
+        print(video['snippet']['title'])
+    request = service.playlistItems().list_next(request, video_list)
+
+  # response = service.playlistItems().list(
+  #   part='snippet',
+  #   maxResults=50,
+  #   playlistId=uploads_id
+  #   #todo add fields and part(done) parameters to reduce quota usage
+  # ).execute()
+  # next_page_token = response['nextPageToken']
+  # for item in response['items']:
+  #   print(item['snippet']['title'])
+  #
+  # while(next_page_token != None or next_page_token!= ''):
+  #   response = service.playlistItems().list(
+  #     part='snippet',
+  #     maxResults=50,
+  #     pageToken=next_page_token,
+  #     playlistId=uploads_id
+  #   ).execute()
+  #   next_page_token = response['nextPageToken']
+  #   for item in response['items']:
+  #     print(item['snippet']['title'])
