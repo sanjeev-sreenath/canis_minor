@@ -59,9 +59,10 @@ def fetch_channel_from_mongo():
     for host in host_curs:
         for channel in host['channels']:
             fetch_videos_for_channel(channel['youtube_channel_id'])
-    # for host in list(db.hosts.find()):
-    #     for channel in host.channels:
-    #         fetch_videos_for_channel(channel)
 
 if __name__ == "__main__":
     fetch_channel_from_mongo()
+
+# ------------------------------------------------------------------
+# To pretty print hosts collection limited to 10 videos per channel
+# db.hosts.find({}, {"channels.videos": {$slice: [0, 10]} }).pretty()

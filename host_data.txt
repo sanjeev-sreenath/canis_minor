@@ -1,0 +1,23 @@
+db.hosts.insert_one({'name': "Conan O'Brien",'channel_ids': ["UCi7GJNg51C3jgmYTUwqoUXA"]})
+
+db.hosts.insert_one({'name': "Jimmy Fallon",'channel_ids': ["UC8-Th83bH_thdKZDJCrn88g"]})
+
+db.hosts.insert_one({'name': "Jimmy Kimmel",'channel_ids': ["UCa6vGFO9ty8v5KZJXQxdhaw"]})
+
+db.hosts.insert_one({'name': "James Corden",'channel_ids': ["UCJ0uqCI0Vqr2Rrt1HseGirg"]})
+
+db.hosts.insert_one({'name': "Stephen Colbert",'channel_ids': ["UCMtFAi84ehTSYSE9XoHefig"]})
+
+db.hosts.insert_one({'name': "Seth Meyers",'channel_ids': ["UCVTyTA7-g9nopHeHbeuvpRA"]})
+
+db.hosts.insert_one({'name': "Ellen DeGeneres",'channel_ids': ["UCp0hYYBW6IMayGgR-WeoCvQ"]})
+
+db.hosts.insert_one({'name': "Bill Maher",'channel_ids': ["UCy6kyFxaMqGtpE3pQTflK8A"]})
+
+db.hosts.insert_one({'name': "Andy Cohen",'channel_ids': ["UCy6D16zE_mMEm1HVD20WFxA"]})
+
+db.hosts.insert_one({'name': "Carson Daly",'channel_ids': ["UCOhL_5yrKxPF3XqQUyUlgzA"]})
+
+db.hosts.insert_one({'name': "Trevor Noah",'channel_ids': ["UCwWhs_6x42TyRM4Wstoq8HA"]})
+
+db.hosts.insert_one({'name': "Chelsea Handler",'channel_ids': ["UCJ7hqXLdgXlzjKpZY-K_6HA"]})

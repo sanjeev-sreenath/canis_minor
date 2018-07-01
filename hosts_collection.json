@@ -17,20 +17,25 @@
         }
       ]
     },
-    {
-      "channel_id": "UCi7GJNg51C3jgmYTUwqoUXA",
-      "videos": [
-        {
-          "video_id": "",
-          "title": "",
-          "published_on": ""
-        },
-        {
-          "video_id": "",
-          "title": "",
-          "published_on": ""
-        }
-      ]
-    }
   ]
+}
+
+video_collection:
+{
+  "host_name": "",
+  "celebrity_name": "",
+  "youtube_video_id": "",
+  "youtube_title": "",
+  "youtube_published_on": ""
+}
+
+host_collection:
+{
+  "name": "conan",
+  "youtube_channel_ids": ["", "", ""]
+}
+
+celebrity_collection:
+{
+  "name": "robin Williams"
 }
